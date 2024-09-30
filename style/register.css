@@ -1,0 +1,24 @@
+
+.container-fluid{
+    margin-top: 10%;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-container input {
+    flex: 1;
+}
+
+.password-container span {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}

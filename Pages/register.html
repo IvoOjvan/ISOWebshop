@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="../style/register.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header">
+                      <h1>Get Started</h1>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST">
+                            <div class="mb-3">
+                                <label for="inputFirstname" class="form-label">Firstname</label>
+                                <input type="text" class="form-control" id="inputFirstname" required>
+                                <div id="firstname-error" class="error-message"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputLastname" class="form-label">Lastname</label>
+                                <input type="text" class="form-control" id="inputLastname" required>
+                                <div id="lastname-error" class="error-message"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" required>
+                                <div id="email-error" class="error-message"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <div class="password-container">
+                                    <input type="password" class="form-control" id="inputPassword" required>
+                                    <span id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                </div>
+                                <div id="password-error" class="error-message"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                         Already have an account?
+                        <a href="../Pages/login.html">Sign in</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+       
+    </div>
+    <script src="../scripts/register.js"></script>
+</body>
+</html>
